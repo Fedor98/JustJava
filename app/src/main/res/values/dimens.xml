@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin">16dp</dimen>
+    <dimen name="checkBoxes_pL">24dp</dimen>
+    <dimen name="checkBoxes_textSize">16sp</dimen>
+    <dimen name="quant_count_margin">8dp</dimen>
+    <dimen name="count_tag_textSize">16sp</dimen>
+</resources>

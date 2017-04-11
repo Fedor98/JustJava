@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.justjava.MainActivity">
+
+    <LinearLayout style="@style/linearLayout">
+
+        <EditText
+            android:id="@+id/name_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:inputType="textCapWords" />
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_marginTop="@dimen/margin"
+            android:text="@string/toppings" />
+
+        <CheckBox
+            android:id="@+id/whipped_cream_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin"
+            android:paddingLeft="@dimen/checkBoxes_pL"
+            android:text="@string/whipped_cream"
+            android:textSize="@dimen/checkBoxes_textSize" />
+
+        <CheckBox
+            android:id="@+id/chocolate_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin"
+            android:paddingLeft="@dimen/checkBoxes_pL"
+            android:text="@string/chocolate"
+            android:textSize="@dimen/checkBoxes_textSize" />
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:layout_marginBottom="@dimen/margin"
+            android:text="@string/quantity" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/plusMinusButton"
+                android:onClick="decrement"
+                android:text="@string/minusButton" />
+
+            <TextView
+                android:id="@+id/quantity_text_view"
+                style="@style/quantCountPriceTagButton"
+                android:paddingLeft="@dimen/quant_count_margin"
+                android:paddingRight="@dimen/quant_count_margin"
+                android:text="@string/initial_quantity_value"
+                android:textColor="@color/black"
+                android:textSize="@dimen/count_tag_textSize" />
+
+            <Button
+                style="@style/plusMinusButton"
+                android:onClick="increment"
+                android:text="@string/plusButton" />
+
+        </LinearLayout>
+
+        <Button
+            style="@style/quantCountPriceTagButton"
+            android:layout_marginTop="@dimen/margin"
+            android:onClick="submitOrder"
+            android:text="@string/order" />
+    </LinearLayout>
+</ScrollView>
